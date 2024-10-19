@@ -9749,67 +9749,51 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 
 
-.skills-wrapper {
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-
-.skill-tags {
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-  gap: 2px;
-  padding: 0;
-  width: 400px; 
-}
-
-.skill-tag {
-  background-color: #f5f5f5;
-  padding: 8px 15px;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
-  display: inline-block;
-  border: 2px solid black; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-  cursor: pointer;
-}
-
-
-.skill-tag:active {
-  transform: scale(1.1); 
-  background-color: var(--pink); 
-}
-.skill-tag:hover {
-  background-color: #ffc107; 
-  border-color: #6c757d; 
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
-}
-
-.skill-tag:active {
-  transform: scale(1.1); 
-  background-color: #f1e7b8;
-  border-color: #5a6268; 
-}
-
-.about-me-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-@media (max-width: 768px) {
-  .skills-wrapper {
-      flex-direction: column;
-      align-items: flex-start;
+    .skills-section {
+      background-color: #2f2f2f;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 20px;
   }
-
-  .about-me-section {
-      align-items: flex-start
+  
+  .skills-section h2 {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
   }
-}
+  
+  .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+  }
+  
+  .skill-item {
+      background-color: #fff;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 50px;
+      color: #000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+  }
+  
+  .skill-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      background-color: #ffc107;
+
+  }
+  
+  
+  @media (max-width: 768px) {
+      .skill-item {
+          font-size: 0.9rem;
+          padding: 8px 15px;
+      }
+  }
+  
